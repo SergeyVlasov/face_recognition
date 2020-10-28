@@ -44,6 +44,31 @@ RU version
 - wget https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
 
 
+проект должен иметь структуру
+```
+├── dataset
+│   ├── Person1
+│   │   ├── 001.jpg
+│   │   ├── 002.jpg
+│   │   ├── 003.jpg
+│   │   ├── 004.jpg
+│   │   ├── 005.jpg
+│   │   ├── 006.jpg
+│   │   ├── 007.jpg
+│   │   └── 008.jpeg
+│   ├── Person2
+│      ├── 001.jpg
+│      ├── 002.jpg
+│      ├── 003.jpg
+│      ├── 004.jpg
+│      └── 005.jpg
+├── encodings.pickle
+├── face-encoding.py
+├── face-recognition-video.py
+└── haarcascade_frontalface_default.xml
+```
+
+
 8) подготавливаем датасет
 
 - python3 data_encoding.py --dataset dataset --encodings encodings.pickle --detection-method hog
