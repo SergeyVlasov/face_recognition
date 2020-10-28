@@ -34,38 +34,7 @@ RU version
 - cd dataset
 - mkdir person1
 - mkdir person2
-
-проект должен иметь следующую структуру:
-.
-├── dataset
-│   ├── Ferdy
-│   │   ├── 001.jpg
-│   │   ├── 002.jpg
-│   │   ├── 003.jpg
-│   │   ├── 004.jpg
-│   │   ├── 005.jpg
-│   │   ├── 006.jpg
-│   │   ├── 007.jpg
-│   │   └── 008.jpeg
-│   ├── Nunut
-│   │   ├── 001.jpg
-│   │   ├── 002.jpg
-│   │   ├── 003.jpg
-│   │   ├── 004.jpg
-│   │   └── 005.jpg
-│   └── Yanwar
-│       ├── 001.jpg
-│       ├── 002.jpg
-│       ├── 003.jpg
-│       ├── 004.jpg
-│       ├── 005.jpg
-│       ├── 006.jpg
-│       └── 007.jpg
-├── encodings.pickle
-├── face-encoding.py
-├── face-recognition-video.py
-└── haarcascade_frontalface_default.xml
-
+....
 
 6) копируем github
 
@@ -80,5 +49,8 @@ RU version
 - python3 data_encoding.py --dataset dataset --encodings encodings.pickle --detection-method hog
 
 
+9) запускаем распознавание лиц
+
+- python3 video_recognition.py --cascade haarcascade_frontalface_default.xml --encodings encodings.pickle
 
 
