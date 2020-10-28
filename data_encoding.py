@@ -1,6 +1,3 @@
-# PENGGUNAAN
-# python face-encoding.py --dataset dataset --encodings encodings.pickle --detection-method hog
-
 
 from imutils import paths
 import face_recognition
