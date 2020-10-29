@@ -22,6 +22,7 @@ RU version
 - pip3 install face_recognition
 - pip3 install imutils
 
+** если возникают проблемы на этапе установки dlib, то попробуйте установить pip install cmake
 
 4) моздаем директорию для проекта
 
