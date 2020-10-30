@@ -23,7 +23,7 @@ data = pickle.loads(open(args["encodings"], "rb").read())
 detector = cv2.CascadeClassifier(args["cascade"])
 
 
-print("[INFO] Memulai Stream dari Pi Camera...")
+print("[INFO] Stream  Pi Camera...")
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
 
